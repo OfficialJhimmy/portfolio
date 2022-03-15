@@ -1,0 +1,76 @@
+.time__quotes--box {
+  padding: 18px 17px;
+  border-radius: 9px;
+  background: #ddd;
+  width: 450px;
+}
+
+.time__quotes--top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.time__quotes-icon img {
+  width: 60px;
+  height: 60px;
+}
+
+.time__quotes--bottom {
+  padding: 5px 13px;
+}
+
+.time__quotes--bottom p {
+  font-size: 16px;
+}
+
+.quote-cta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.quote-cta button {
+  background: #17a2b8;
+  padding: 10px 15px;
+  border-radius: 5px;
+  color: #fff;
+  transition: ease-in-out 1s;
+}
+
+.quote-cta button:hover {
+  background: #032f36;
+}
+
+@media screen and (max-width: 680px) {
+  .time__quotes--box {
+    padding: 14px 10px;
+    width: 300px;
+    margin: 0 25px;
+  }
+
+  .time__quotes-icon img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .time__quotes--bottom {
+    padding: 5px 8px;
+  }
+
+  .time__quotes--bottom p {
+    font-size: 13px;
+  }
+
+  .quote-cta button {
+    padding: 10px 12px;
+  }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 700px) {
+  .time__quotes--box {
+    width: 430px;
+  }
+}

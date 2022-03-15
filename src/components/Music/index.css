@@ -1,0 +1,22 @@
+.music-box {
+  cursor: pointer;
+}
+
+.music-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.music-box__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 680px) {
+  .music-icon {
+    width: 20px;
+    height: 20px;
+  }
+}

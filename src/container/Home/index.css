@@ -1,0 +1,27 @@
+.nav__wrapper {
+  background: #10101a;
+}
+
+.nav__wrapper h3 {
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  color: #fff;
+}
+
+.nav__wrapper {
+  height: 80px !important;
+  border-bottom: 1px solid rgb(116, 116, 116);
+}
+
+@media screen and (max-width: 680px) {
+  .nav__wrapper h3 {
+    top: 33px;
+  }
+}
+
+@media screen and (max-width: 400px) and (min-width: 280px) {
+}
+
+@media screen and (max-width: 1000px) and (min-width: 690px) {
+}

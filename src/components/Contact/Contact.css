@@ -1,0 +1,86 @@
+.contact__wrapper {
+  position: relative;
+  /* color: #fff; */
+  color: antiquewhite;
+  margin-top: 210px;
+}
+
+.contact__wrapper h2 {
+  margin-bottom: 50px;
+  font-size: 35px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+}
+
+.rocket-img {
+  width: 4%;
+}
+
+.contact__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact__container p {
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 1.6;
+  margin-bottom: 50px;
+}
+
+.contact__link {
+  /* color: #fff; */
+  color: antiquewhite;
+  align-items: center;
+  transition: ease-in-out 2s;
+}
+
+.contact__link:hover {
+  color: azure;
+}
+
+.contact-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.lottie__wrapper {
+  width: 30%;
+  position: absolute;
+  bottom: 4%;
+  right: 2%;
+}
+
+@media screen and (max-width: 680px) {
+  .contact__wrapper {
+    margin-top: 100px;
+  }
+
+  .contact__wrapper h2 {
+    margin-bottom: 30px;
+    font-size: 25px;
+  }
+
+  .rocket-img {
+    width: 5%;
+  }
+
+  .contact__container p {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+
+  .contact-icon {
+    width: 17px;
+    height: 17px;
+  }
+
+  .lottie__wrapper {
+    width: 40%;
+    position: absolute;
+    bottom: 3%;
+    right: 2%;
+  }
+}

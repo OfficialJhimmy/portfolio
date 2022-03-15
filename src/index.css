@@ -1,13 +1,160 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
+/* FONTS */
+@font-face {
+  font-family: "gingerregular";
+  src: url("./assets/Fonts/Ginger/ginger-webfont.woff2") format("woff2"),
+    url("./assets/Fonts/Ginger/ginger-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --font-family-paragraph: "Poppins", sans-serif;
+  --gradient-text: linear-gradient(89.97deg, #ae67fa 1.84%, #f49867 102.67%);
+  --gradient-bar: linear-gradient(103.22deg, #ae67fa -13.86%, #f49867 99.55%);
+  --color-bg: #040c18;
+  --color-footer: #031b34;
+  --color-blog: #042c54;
+  --color-text: #81afdd;
+  --color-subtext: #ff8a71;
+}
+
+html {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 100%;
+  transform-origin: center right;
+  transition: transform 0.3s, opacity 0.3s;
+  opacity: 0;
+}
+
+::-webkit-scrollbar-thumb {
+  /* background-color: #42454b; */
+  background-color: #444;
+  opacity: 0.5;
+  width: 7px;
+  border-radius: 6px;
+  margin: 2px;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+body {
+  overflow-x: hidden;
+  text-decoration: none;
+  color: #222;
+  background: #10101a;
+}
+
+img {
+  object-fit: contain;
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+a:focus,
+a:active,
+a:visited {
+  color: #eee;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "gingerregular";
+  font-display: swap;
+}
+
+section {
+  padding: 100px 80px;
+}
+
+p,
+span,
+button,
+a,
+input,
+textarea {
+  font-family: var(--font-family-paragraph);
+  font-display: swap;
+  font-style: normal;
+}
+
+p {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+button {
+  font-size: 14px;
+  line-height: 14px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+@media screen and (max-width: 680px) {
+  section {
+    padding: 50px 20px;
+  }
+
+  p {
+    line-height: 22px;
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 700px) {
+  section {
+    padding: 50px 20px;
+  }
+
+  p {
+    line-height: 1.6;
+    font-size: 14px;
+  }
 }
