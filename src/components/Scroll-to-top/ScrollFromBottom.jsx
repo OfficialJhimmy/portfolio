@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import ArrowUp from "../../assets/icons/up-arrow.png";
+import ArrowUp from "../../assets/icons/up.png";
 import "./index.css";
 
 export const ScrollFromBottom = () => {

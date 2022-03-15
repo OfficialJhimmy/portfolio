@@ -4,9 +4,12 @@ import Lottie from "lottie-web";
 import paperplane from "../../assets/lottie/paper-plane.json";
 import Rocket from "../../assets/icons/rocket.png";
 import "./Contact.css";
+import { useInView } from "react-intersection-observer";
 
 function Contact() {
   const wrapper = useRef(null);
+
+  const { ref: imgRef, inView: isVisible } = useInView();
 
   useEffect(() => {
     Lottie.loadAnimation({
@@ -17,12 +20,19 @@ function Contact() {
       animationData: paperplane,
     });
   }, []);
+
+  useEffect(() => {});
   return (
     <>
       <div className="contact__wrapper">
         <h2>
           Got a Job for me?{" "}
-          <img src={Rocket} alt="Rocket" className="rocket-img" />
+          <img
+            ref={imgRef}
+            src={Rocket}
+            alt="Rocket"
+            className={`rocket-img ${isVisible ? "animateRocket" : ""}`}
+          />
         </h2>
         <div className="contact__container">
           <p>

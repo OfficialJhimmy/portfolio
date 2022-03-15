@@ -46,7 +46,7 @@ function SkillsCarousel() {
         </SwiperSlide>
         <SwiperSlide>
           <img src={sass} alt="logo of my skills" />
-          <p>SASS (CSS Processor)</p>
+          <p>SASS (CSS Pre-Processor)</p>
         </SwiperSlide>
         <SwiperSlide>
           <img src={js} alt="logo of my skills" />

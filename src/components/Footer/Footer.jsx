@@ -18,21 +18,21 @@ function Footer() {
           <p>Gym Session 🏋️‍♂️</p>
         </>
       );
-    } else if (getCurrentTime === "8:00:00" || getCurrentTime <= "15:59:59") {
+    } else if (getCurrentTime === "8:00:00" && getCurrentTime <= "15:59:59") {
       return (
         <>
           <p>{getCurrentTime}:</p>
           <p>Let's Code 👨‍💻</p>
         </>
       );
-    } else if (getCurrentTime === "16:00:00" || getCurrentTime <= "18:59:59") {
+    } else if (getCurrentTime === "16:00:00" && getCurrentTime <= "18:59:59") {
       return (
         <>
           <p>{getCurrentTime}:</p>
           <p>Reading a Book 📖</p>
         </>
       );
-    } else if (getCurrentTime === "19:00:00" || getCurrentTime <= "22:59:59") {
+    } else if (getCurrentTime === "19:00:00" && getCurrentTime <= "22:59:59") {
       return (
         <>
           <p>{getCurrentTime}:</p>

@@ -1,8 +1,7 @@
 .contact__wrapper {
   position: relative;
-  /* color: #fff; */
   color: antiquewhite;
-  margin-top: 210px;
+  margin-top: 120px;
 }
 
 .contact__wrapper h2 {
@@ -51,6 +50,32 @@
   position: absolute;
   bottom: 4%;
   right: 2%;
+}
+
+.animateRocket {
+  animation-duration: 5s;
+  animation-name: animate-rocket;
+}
+
+@keyframes animate-rocket {
+  0% {
+    transform: scale(1) rotate(10deg);
+  }
+  5% {
+    transform: scale(1.1) rotate(-15deg);
+  }
+  10% {
+    transform: scale(1.15) rotate(5deg);
+  }
+  15% {
+    transform: scale(1.2) rotate(-10deg);
+  }
+  20% {
+    transform: scale(1.5) rotate(0);
+  }
+  100% {
+    transform: scale(1.8) translate3d(100vw, -100vh, 0) rotate(0);
+  }
 }
 
 @media screen and (max-width: 680px) {
