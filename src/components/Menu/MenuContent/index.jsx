@@ -19,19 +19,19 @@ const internalLinks = [
 
 const externalLinks = [
   {
-    url: "www.github.com/officialjhimmy",
+    url: "https://github.com/officialjhimmy",
     component: <GitHub />,
   },
   {
-    url: "www.twitter.com/jhimmyofficial",
+    url: "https://twitter.com/jhimmyofficial",
     component: <Twitter />,
   },
   {
-    url: "www.linkedin.com/jhimmyofficial",
+    url: "https://linkedin.com/jhimmyofficial",
     component: <Linkedin />,
   },
   {
-    url: "www.instagram.com/jhimmyofficial",
+    url: "https://instagram.com/jhimmyofficial",
     component: <Instagram />,
   },
 ];
