@@ -27,7 +27,7 @@ const externalLinks = [
     component: <Twitter />,
   },
   {
-    url: "https://linkedin.com/jhimmyofficial",
+    url: "https://linkedin.com/in/jhimmyofficial",
     component: <Linkedin />,
   },
   {

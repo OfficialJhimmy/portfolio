@@ -61,7 +61,7 @@ const Banner = () => {
               <img src={Twitter} alt="Social icon" /> <span>TW</span>
             </a>
             <a
-              href="https://linkedin.com/jhimmyofficial"
+              href="https://linkedin.com/in/jhimmyofficial"
               className="banner-social__icon"
             >
               <img src={Linkedin} alt="Social icon" /> <span>LD</span>
