@@ -1,11 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
 import github from "../../assets/icons/github-icon.png";
 import "./Skills.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 function SkillsSvg() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <>
       <div className="skills__svg-container">
-        <div className="skills__right-box">
+        <div
+          className="skills__right-box"
+          data-aos="fade-down"
+          data-aos-duration="12000"
+          data-aos-easing="ease-in"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             role="img"
@@ -18,7 +28,13 @@ function SkillsSvg() {
           </svg>
           <p>HTML5</p>
         </div>
-        <div className="skills__right-box">
+        <div
+          className="skills__right-box"
+          data-aos="fade-down"
+          data-aos-delay="200"
+          data-aos-duration="13000"
+          data-aos-easing="ease-in"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             role="img"
@@ -31,7 +47,13 @@ function SkillsSvg() {
           </svg>
           <p>CSS3</p>
         </div>
-        <div className="skills__right-box">
+        <div
+          className="skills__right-box"
+          data-aos="fade-down"
+          data-aos-delay="300"
+          data-aos-duration="14000"
+          data-aos-easing="ease-in"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             role="img"
@@ -44,7 +66,13 @@ function SkillsSvg() {
           </svg>
           <p>SASS</p>
         </div>
-        <div className="skills__right-box">
+        <div
+          className="skills__right-box"
+          data-aos="fade-down"
+          data-aos-delay="160"
+          data-aos-duration="15000"
+          data-aos-easing="ease-in"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             role="img"
@@ -57,7 +85,13 @@ function SkillsSvg() {
           </svg>
           <p>JavaScript</p>
         </div>
-        <div className="skills__right-box">
+        <div
+          className="skills__right-box"
+          data-aos="fade-down"
+          data-aos-delay="400"
+          data-aos-duration="16000"
+          data-aos-easing="ease-in"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             role="img"
@@ -70,7 +104,13 @@ function SkillsSvg() {
           </svg>
           <p>React</p>
         </div>
-        <div className="skills__right-box">
+        <div
+          className="skills__right-box"
+          data-aos="fade-down"
+          data-aos-delay="500"
+          data-aos-duration="17000"
+          data-aos-easing="ease-in"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             role="img"
@@ -83,7 +123,13 @@ function SkillsSvg() {
           </svg>
           <p>Redux</p>
         </div>
-        <div className="skills__right-box">
+        <div
+          className="skills__right-box"
+          data-aos="fade-down"
+          data-aos-delay="600"
+          data-aos-duration="18000"
+          data-aos-easing="ease-in"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             role="img"
@@ -96,7 +142,13 @@ function SkillsSvg() {
           </svg>
           <p>React Router</p>
         </div>
-        <div className="skills__right-box">
+        <div
+          className="skills__right-box"
+          data-aos="fade-down"
+          data-aos-delay="700"
+          data-aos-duration="19000"
+          data-aos-easing="ease-in"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             role="img"
@@ -109,7 +161,13 @@ function SkillsSvg() {
           </svg>
           <p>Firebase</p>
         </div>
-        <div className="skills__right-box">
+        <div
+          className="skills__right-box"
+          data-aos="fade-down"
+          data-aos-delay="800"
+          data-aos-duration="20000"
+          data-aos-easing="ease-in"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             role="img"
@@ -122,7 +180,13 @@ function SkillsSvg() {
           </svg>
           <p>Git</p>
         </div>
-        <div className="skills__right-box">
+        <div
+          className="skills__right-box"
+          data-aos="fade-down"
+          data-aos-delay="900"
+          data-aos-duration="21000"
+          data-aos-easing="ease-in"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             role="img"
@@ -135,11 +199,23 @@ function SkillsSvg() {
           </svg>
           <p>Wordpress</p>
         </div>
-        <div className="skills__right-box">
+        <div
+          className="skills__right-box"
+          data-aos="fade-down"
+          data-aos-delay="1000"
+          data-aos-duration="22000"
+          data-aos-easing="ease-in"
+        >
           <img src={github} alt="Github Logo" className="svg-gh" />
           <p>Github</p>
         </div>
-        <div className="skills__right-box">
+        <div
+          className="skills__right-box"
+          data-aos="fade-down"
+          data-aos-delay="1100"
+          data-aos-duration="23000"
+          data-aos-easing="ease-in"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             role="img"
@@ -152,7 +228,13 @@ function SkillsSvg() {
           </svg>
           <p>Postman</p>
         </div>
-        <div className="skills__right-box">
+        <div
+          className="skills__right-box"
+          data-aos="fade-down"
+          data-aos-delay="1200"
+          data-aos-duration="24000"
+          data-aos-easing="ease-in"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             role="img"
@@ -165,7 +247,13 @@ function SkillsSvg() {
           </svg>
           <p>Node Js</p>
         </div>
-        <div className="skills__right-box">
+        <div
+          className="skills__right-box"
+          data-aos="fade-down"
+          data-aos-delay="1400"
+          data-aos-duration="25000"
+          data-aos-easing="ease-in"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             role="img"

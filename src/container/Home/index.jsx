@@ -2,7 +2,7 @@ import React from "react";
 import MenuManager from "../../components/Menu/MenuManager/index";
 import Banner from "../../components/Banner/Banner";
 import Menu from "../../components/Menu/index";
-
+import { Link } from "react-router-dom";
 import "./index.css";
 import About from "../../components/About/index";
 import Skills from "../../components/Skills/Skills";
@@ -15,7 +15,9 @@ const Home = () => {
   return (
     <>
       <div className="nav__wrapper">
-        <h3>JhimmyOfficial</h3>
+        <Link to="/">
+          <h3>JhimmyOfficial</h3>
+        </Link>
 
         <MenuManager>
           <Menu />

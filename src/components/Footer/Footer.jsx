@@ -8,31 +8,41 @@ function Footer() {
     setInterval(() => setDateState(new Date()), 1000);
   }, []);
 
-  const getCurrentTime = `${dateState.getHours()} : ${dateState.getMinutes()} : ${dateState.getSeconds()}`;
+  const getCurrentTime = `${dateState.getHours()}:${dateState.getMinutes()}:${dateState.getSeconds()}`;
+
+  const getHours = new Date().getHours();
+  // console.log(getCurrentTime); 11 : 54 : 37
 
   function displayMe(getCurrentTime) {
-    if (getCurrentTime === " 6:00:00" && getCurrentTime <= "7:59:59") {
+    if (getHours < 5) {
       return (
         <>
           <p>{getCurrentTime}:</p>
-          <p>Gym Session 🏋️‍♂️</p>
+          <p>Good Morning 🌞</p>
         </>
       );
-    } else if (getCurrentTime === "8:00:00" && getCurrentTime <= "15:59:59") {
+    } else if (getHours < 8) {
+      return (
+        <>
+          <p>{getCurrentTime}:</p>
+          <p>Morning Routine 🏋️‍♂️</p>
+        </>
+      );
+    } else if (getHours < 16) {
       return (
         <>
           <p>{getCurrentTime}:</p>
           <p>Let's Code 👨‍💻</p>
         </>
       );
-    } else if (getCurrentTime === "16:00:00" && getCurrentTime <= "18:59:59") {
+    } else if (getHours < 19) {
       return (
         <>
           <p>{getCurrentTime}:</p>
           <p>Reading a Book 📖</p>
         </>
       );
-    } else if (getCurrentTime === "19:00:00" && getCurrentTime <= "22:59:59") {
+    } else if (getHours < 23) {
       return (
         <>
           <p>{getCurrentTime}:</p>

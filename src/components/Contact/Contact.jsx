@@ -2,14 +2,10 @@ import React, { useEffect, useRef } from "react";
 import { FcCellPhone } from "react-icons/fc";
 import Lottie from "lottie-web";
 import paperplane from "../../assets/lottie/paper-plane.json";
-import Rocket from "../../assets/icons/rocket.png";
 import "./Contact.css";
-import { useInView } from "react-intersection-observer";
 
 function Contact() {
   const wrapper = useRef(null);
-
-  const { ref: imgRef, inView: isVisible } = useInView();
 
   useEffect(() => {
     Lottie.loadAnimation({
@@ -25,15 +21,7 @@ function Contact() {
   return (
     <>
       <div className="contact__wrapper">
-        <h2>
-          Got a Job for me?{" "}
-          <img
-            ref={imgRef}
-            src={Rocket}
-            alt="Rocket"
-            className={`rocket-img ${isVisible ? "animateRocket" : ""}`}
-          />
-        </h2>
+        <h2>Got a Job for me?</h2>
         <div className="contact__container">
           <p>
             Hello there 👋, Thank you for getting here. I'm currently looking to

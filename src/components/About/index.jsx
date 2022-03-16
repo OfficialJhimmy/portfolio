@@ -1,34 +1,38 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect } from "react";
 import TimeQuotes from "./TimeQuotes";
 import NGA from "../../assets/icons/nigeria.png";
 import ENG from "../../assets/icons/united-kingdom.png";
 import GER from "../../assets/icons/germany.png";
 import ESP from "../../assets/icons/spain.png";
 import "./index.css";
-import { useInView } from "react-intersection-observer";
-import { gsap } from "gsap";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 function About() {
-  const { ref: sectionRef, inView: isVisible } = useInView();
-  const { ref: section2Ref, inView: isVisible2 } = useInView();
-  const { ref: section3Ref, inView: isVisible3 } = useInView();
-
-  gsap.to(sectionRef, {
-    duration: 1,
-    opacity: 1,
-    y: -60,
-    ease: "power4.out",
-    stagger: {
-      amount: 0.3,
-    },
-  });
-
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <>
-      <div className="about--top">
+      <div
+        className="about--top"
+        data-aos="fade-up"
+        data-aos-offset="250"
+        data-aos-delay="100"
+        data-aos-duration="1000"
+        data-aos-easing="ease"
+      >
         <TimeQuotes />
       </div>
       <div className="about-description">
-        <p className="heading-about" ref={sectionRef}>
+        <p
+          className="heading-about"
+          data-aos="fade-up"
+          data-aos-offset="250"
+          data-aos-delay="100"
+          data-aos-duration="1000"
+          data-aos-easing="ease"
+        >
           Hello World 🌏, I'm a{" "}
           <span>
             Lagos-based
@@ -39,12 +43,24 @@ function About() {
           user interfaces, that are scalable, interactive and easy to maintain.
         </p>
 
-        <p className="heading-about" ref={section2Ref}>
+        <p
+          className="heading-about"
+          data-aos="fade-up"
+          data-aos-offset="250"
+          data-aos-duration="1000"
+          data-aos-easing="ease"
+        >
           I'm a Logical and results-driven developer dedicated to building Web
           Solutions for various business objectives.
         </p>
 
-        <p className="heading-about" ref={section3Ref}>
+        <p
+          className="heading-about"
+          data-aos="fade-up"
+          data-aos-offset="250"
+          data-aos-duration="1000"
+          data-aos-easing="ease"
+        >
           Fun Facts😎: I Speak 4 different languages : {"  "}
           <span>
             English
