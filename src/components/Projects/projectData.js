@@ -2,6 +2,7 @@ import DASH from "../../assets/images/dash.webp";
 import Ovatave from "../../assets/images/ovatave.webp";
 import PSR from "../../assets/images/psr.webp";
 import Manage from "../../assets/images/manage.webp";
+import Portfolio from "../../assets/images/portfolio.webp";
 
 export const projectData = [
   {
@@ -49,8 +50,8 @@ export const projectData = [
       "Locomotive Scroll",
     ],
     live: "https://dashlanguageschool.com",
-    github: "https://github.com/OfficialJhimmy/Dash-Language-Place",
-    img: Ovatave,
+    github: "https://https://github.com/OfficialJhimmy/portfolio12",
+    img: Portfolio,
   },
   {
     title: "Manage",

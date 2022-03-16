@@ -49,25 +49,25 @@ const Banner = () => {
           </div>
           <div className="banner-socials">
             <a
-              href="www.github.com/officialjhimmy"
+              href="https://github.com/officialjhimmy"
               className="banner-social__icon"
             >
               <img src={Github} alt="Social icon" /> <span>GH</span>
             </a>
             <a
-              href="www.twitter.com/jhimmyofficial"
+              href="https://twitter.com/jhimmyofficial"
               className="banner-social__icon"
             >
               <img src={Twitter} alt="Social icon" /> <span>TW</span>
             </a>
             <a
-              href="www.linkedin.com/jhimmyofficial"
+              href="https://linkedin.com/jhimmyofficial"
               className="banner-social__icon"
             >
               <img src={Linkedin} alt="Social icon" /> <span>LD</span>
             </a>
             <a
-              href="www.instagram.com/jhimmyofficial"
+              href="https://instagram.com/jhimmyofficial"
               className="banner-social__icon"
             >
               <img src={Instagram} alt="Social icon" /> <span>IG</span>
