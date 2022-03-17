@@ -3,28 +3,16 @@ import "./Projects.css";
 import { projectData } from "./projectData";
 import { GrGithub } from "react-icons/gr";
 import { BsLink45Deg } from "react-icons/bs";
-import Rocket from "../../assets/icons/rocket.png";
-import { useInView } from "react-intersection-observer";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 function Projects() {
-  const { ref: imgRef, inView: isVisible } = useInView();
-
   useEffect(() => {
     AOS.init();
   }, []);
   return (
     <div className="project__container">
-      <h2 className="heading-project">
-        Selected Projects{" "}
-        <img
-          ref={imgRef}
-          src={Rocket}
-          alt="Rocket"
-          className={`rocket-img ${isVisible ? "animateRocket" : ""}`}
-        />
-      </h2>
+      <h2 className="heading-project">Selected Projects</h2>
 
       <div className="project__wrapper">
         {projectData.map((pro, index) => (

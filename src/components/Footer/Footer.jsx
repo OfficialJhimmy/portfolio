@@ -11,14 +11,13 @@ function Footer() {
   const getCurrentTime = `${dateState.getHours()}:${dateState.getMinutes()}:${dateState.getSeconds()}`;
 
   const getHours = new Date().getHours();
-  // console.log(getCurrentTime); 11 : 54 : 37
 
   function displayMe(getCurrentTime) {
     if (getHours < 5) {
       return (
         <>
           <p>{getCurrentTime}:</p>
-          <p>Good Morning 🌞</p>
+          <p>Sleeping 😴</p>
         </>
       );
     } else if (getHours < 8) {

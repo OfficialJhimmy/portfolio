@@ -33,7 +33,7 @@ function Contact() {
             or a{" "}
             <a href="tel:+2349057492540" className="contact__link">
               {" "}
-              Phone Call <FcCellPhone className="contact-icon" />
+              Phone Call 📞
             </a>{" "}
             will do{" "}
           </p>

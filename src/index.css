@@ -138,32 +138,6 @@ button {
 }
 
 /* App Styling */
-.cursor-follower {
-  position: absolute;
-  background: url(assets/icons/click.png) no-repeat 50% 50%;
-  background-size: cover;
-  /* height: 70px;
-  width: 70px; */
-  height: 40px;
-  width: 40px;
-  /* animation: animate-rotate 10s infinite linear; */
-  z-index: 1500;
-  user-select: none;
-  opacity: 0.8;
-  /* mix-blend-mode: multiply; */
-  overflow: hidden;
-  pointer-events: none;
-  transform: translate(35px, 35px);
-}
-@keyframes animate-rotate {
-  to {
-    transform: rotate(0deg);
-  }
-  from {
-    transform: rotate(360deg);
-  }
-}
-
 .loader {
   margin: 0;
   padding: 0;
@@ -220,12 +194,6 @@ button {
   p {
     line-height: 22px;
     font-size: 13px;
-  }
-
-  .cursor-follower {
-    /* display: none; */
-    width: 30px;
-    height: 30px;
   }
 }
 

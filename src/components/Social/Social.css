@@ -36,11 +36,6 @@
 .social-media__links img,
 .social-media__links svg {
   width: 30px;
-  margin-right: 7px;
-}
-
-.social-media__links span {
-  font-size: 15px;
 }
 
 @media screen and (max-width: 680px) {
@@ -67,14 +62,6 @@
 
   .social-media__links img,
   .social-media__links svg {
-    width: 20px;
-    margin-right: 6px;
-  }
-
-  .social-media__links span {
-    font-size: 10px;
+    width: 24px;
   }
 }
-/* 
-@media screen and (max-width: 1000px) and (min-width: 700px) {
-} */

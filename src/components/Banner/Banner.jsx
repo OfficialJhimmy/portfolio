@@ -8,6 +8,7 @@ import Twitter from "../../assets/icons/twitter.png";
 import Github from "../../assets/icons/github-icon.png";
 import Linkedin from "../../assets/icons/linkedin.png";
 import Instagram from "../../assets/icons/instagram.png";
+import gmail from "../../assets/icons/gmail.png";
 
 const Banner = () => {
   const container = useRef(null);
@@ -52,25 +53,31 @@ const Banner = () => {
               href="https://github.com/officialjhimmy"
               className="banner-social__icon"
             >
-              <img src={Github} alt="Social icon" /> <span>GH</span>
+              <img src={Github} alt="Social icon" />
             </a>
             <a
               href="https://twitter.com/jhimmyofficial"
               className="banner-social__icon"
             >
-              <img src={Twitter} alt="Social icon" /> <span>TW</span>
+              <img src={Twitter} alt="Social icon" />
             </a>
             <a
               href="https://linkedin.com/in/jhimmyofficial"
               className="banner-social__icon"
             >
-              <img src={Linkedin} alt="Social icon" /> <span>LD</span>
+              <img src={Linkedin} alt="Social icon" />
             </a>
             <a
               href="https://instagram.com/jhimmyofficial"
               className="banner-social__icon"
             >
-              <img src={Instagram} alt="Social icon" /> <span>IG</span>
+              <img src={Instagram} alt="Social icon" />
+            </a>
+            <a
+              href="mailto:erinlejhimmy@gmail.com"
+              className="banner-social__icon"
+            >
+              <img src={gmail} alt="Social icon" />
             </a>
           </div>
         </div>

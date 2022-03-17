@@ -14,14 +14,7 @@ function About() {
   }, []);
   return (
     <>
-      <div
-        className="about--top"
-        data-aos="fade-up"
-        data-aos-offset="250"
-        data-aos-delay="100"
-        data-aos-duration="1000"
-        data-aos-easing="ease"
-      >
+      <div className="about--top">
         <TimeQuotes />
       </div>
       <div className="about-description">

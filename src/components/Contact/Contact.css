@@ -39,10 +39,7 @@
 }
 
 .lottie__wrapper {
-  width: 30%;
-  position: absolute;
-  bottom: 4%;
-  right: 2%;
+  display: none;
 }
 
 @media screen and (max-width: 680px) {

@@ -18,25 +18,25 @@ function Social() {
               href="https://github.com/officialjhimmy"
               className="social-media__links"
             >
-              <img src={Github} alt="Social icon" /> <span>GH</span>
+              <img src={Github} alt="Social icon" />
             </a>
             <a
               href="https://twitter.com/jhimmyofficial"
               className="social-media__links"
             >
-              <img src={Twitter} alt="Social icon" /> <span>TW</span>
+              <img src={Twitter} alt="Social icon" />
             </a>
             <a
               href="https://linkedin.com/in/jhimmyofficial"
               className="social-media__links"
             >
-              <img src={Linkedin} alt="Social icon" /> <span>LD</span>
+              <img src={Linkedin} alt="Social icon" />
             </a>
             <a
               href="https://instagram.com/jhimmyofficial"
               className="social-media__links"
             >
-              <img src={Instagram} alt="Social icon" /> <span>IG</span>
+              <img src={Instagram} alt="Social icon" />
             </a>
             <a
               href="https://hashnode.com/@jhimmyofficial"
@@ -51,13 +51,12 @@ function Social() {
                 <title>Hashnode</title>
                 <path d="M22.351 8.019l-6.37-6.37a5.63 5.63 0 0 0-7.962 0l-6.37 6.37a5.63 5.63 0 0 0 0 7.962l6.37 6.37a5.63 5.63 0 0 0 7.962 0l6.37-6.37a5.63 5.63 0 0 0 0-7.962zM12 15.953a3.953 3.953 0 1 1 0-7.906 3.953 3.953 0 0 1 0 7.906z" />
               </svg>
-              <span>HN</span>
             </a>
             <a
               href="https://medium.com/@jhimmyofficial"
               className="social-media__links"
             >
-              <img src={Medium} alt="Social icon" /> <span>MD</span>
+              <img src={Medium} alt="Social icon" />
             </a>
           </div>
         </div>
