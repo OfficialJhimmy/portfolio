@@ -27,8 +27,8 @@
 
 .change__section--color-2 {
   background: #348f50;
-  background: -webkit-linear-gradient(to bottom, #56b4d3, #348f50);
-  background: linear-gradient(to bottom, #56b4d3, #348f50);
+  background: -webkit-linear-gradient(to bottom left, #56b4d3, #348f50);
+  background: linear-gradient(to bottom left, #56b4d3, #348f50);
 }
 @media screen and (max-width: 680px) {
   .nav__wrapper h3 {
