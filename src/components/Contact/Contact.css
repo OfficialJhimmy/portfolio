@@ -1,7 +1,9 @@
 .contact__wrapper {
   position: relative;
   color: antiquewhite;
-  margin-top: 210px;
+  margin-bottom: 50px;
+  /* margin-top: 210px; */
+  /* padding: 200px 120px; */
 }
 
 .contact__wrapper h2 {
@@ -44,7 +46,8 @@
 
 @media screen and (max-width: 680px) {
   .contact__wrapper {
-    margin-top: 100px;
+    /* margin-top: 100px; */
+    /* padding: 80px 20px; */
   }
 
   .contact__wrapper h2 {
@@ -67,5 +70,11 @@
     position: absolute;
     bottom: 3%;
     right: 2%;
+  }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 700px) {
+  .contact__wrapper {
+    /* padding: 80px 40px; */
   }
 }

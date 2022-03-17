@@ -13,7 +13,7 @@ function About() {
     AOS.init();
   }, []);
   return (
-    <>
+    <div className="about-section">
       <div className="about--top">
         <TimeQuotes />
       </div>
@@ -78,7 +78,7 @@ function About() {
           </span>
         </p>
       </div>
-    </>
+    </div>
   );
 }
 

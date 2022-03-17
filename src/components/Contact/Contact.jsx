@@ -1,5 +1,4 @@
 import React, { useEffect, useRef } from "react";
-import { FcCellPhone } from "react-icons/fc";
 import Lottie from "lottie-web";
 import paperplane from "../../assets/lottie/paper-plane.json";
 import "./Contact.css";

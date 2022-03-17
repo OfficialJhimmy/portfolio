@@ -8,7 +8,7 @@ import Medium from "../../assets/icons/medium.png";
 
 function Social() {
   return (
-    <div>
+    <>
       <div className="social__wrapper">
         <h2>Let's Stay Connected 💙</h2>
         <div className="social__container">
@@ -61,7 +61,7 @@ function Social() {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 

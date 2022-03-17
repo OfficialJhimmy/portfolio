@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap");
 /* FONTS */
 @font-face {
   font-family: "gingerregular";
@@ -9,6 +10,8 @@
   font-style: normal;
   font-display: swap;
 }
+
+/* font-family: 'Major Mono Display', monospace; */
 
 *,
 *::after,
@@ -20,13 +23,6 @@
 
 :root {
   --font-family-paragraph: "Poppins", sans-serif;
-  --gradient-text: linear-gradient(89.97deg, #ae67fa 1.84%, #f49867 102.67%);
-  --gradient-bar: linear-gradient(103.22deg, #ae67fa -13.86%, #f49867 99.55%);
-  --color-bg: #040c18;
-  --color-footer: #031b34;
-  --color-blog: #042c54;
-  --color-text: #81afdd;
-  --color-subtext: #ff8a71;
 }
 
 html {
@@ -46,7 +42,6 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-  /* background-color: #42454b; */
   background-color: #444;
   opacity: 0.5;
   width: 7px;
@@ -75,8 +70,6 @@ input::-webkit-inner-spin-button {
 body {
   overflow-x: hidden;
   text-decoration: none;
-  color: #222;
-  background: #10101a;
 }
 
 img {
@@ -90,13 +83,13 @@ ul {
 
 a {
   text-decoration: none;
-  color: aliceblue;
+  /* color: aliceblue; */
 }
 
 a:focus,
 a:active,
 a:visited {
-  color: #eee;
+  /* color: #eee; */
 }
 
 h1,

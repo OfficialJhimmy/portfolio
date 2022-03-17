@@ -1,6 +1,7 @@
 .social__wrapper {
-  margin-top: 120px;
+  /* margin-top: 120px; */
   color: antiquewhite;
+  /* padding: 200px 120px; */
 }
 
 .social__wrapper h2 {
@@ -40,7 +41,8 @@
 
 @media screen and (max-width: 680px) {
   .social__wrapper {
-    margin-top: 60px;
+    /* margin-top: 60px; */
+    /* padding: 80px 20px; */
   }
 
   .social__wrapper h2 {
@@ -63,5 +65,11 @@
   .social-media__links img,
   .social-media__links svg {
     width: 24px;
+  }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 700px) {
+  .social__wrapper {
+    /* padding: 80px 40px; */
   }
 }

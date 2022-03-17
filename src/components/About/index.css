@@ -1,9 +1,14 @@
+.about-section {
+  background: #10101a;
+  padding: 200px 120px 80px 120px;
+}
+
 .about--top {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 40px;
+  margin-top: 110px;
 }
 
 .about-description {
@@ -12,7 +17,6 @@
   justify-content: center;
   align-items: center;
   margin: 50px 60px 30px 60px;
-  /* color: #fff; */
   color: antiquewhite;
 }
 
@@ -36,6 +40,9 @@
 }
 
 @media screen and (max-width: 680px) {
+  .about-section {
+    padding: 80px 20px 20px 20px;
+  }
   .about-description {
     margin: 50px 0px 30px 0px;
   }
@@ -54,6 +61,9 @@
 }
 
 @media screen and (max-width: 1000px) and (min-width: 700px) {
+  .about-section {
+    padding: 80px 40px;
+  }
   .about-description {
     margin: 50px 45px 30px 45px;
   }

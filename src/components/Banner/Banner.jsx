@@ -25,23 +25,44 @@ const Banner = () => {
   return (
     <>
       <div className="banner__wrapper">
-        <div className="banner__description">
-          <div className="banner-info">
-            <span>Hi there👋, I'm</span>
-            <h1 className="glitch-text" data-text="JHIMMY OFFICIAL">
-              JHIMMYOFFICIAL
-            </h1>
-            <p>
-              A Self-Taught Front-End Web Developer based in Lagos, Nigeria. I
-              use Front-end tools to create pixel perfect designs that are
-              scalable, interactive and easy to maintain.
+        <div className="banner-info">
+          <div className="tech-adverbs">
+            <p className="first-child-ad">
+              <span>“</span>DE<span>V</span>ELOPE<span>R,</span>
             </p>
+            <br />
+            <p>
+              LO<span>G</span>ICAL THINKE <span>R,</span>
+            </p>
+            <br />
+            <p className="last-child-ad">
+              C<span>R</span>E <span>A</span>TI <span>V</span>E <span>.”</span>
+            </p>
+          </div>
+          <div className="middle-description">
+            <h1>
+              FRONT-END
+              <br />
+              WEB DEVELOPER
+            </h1>
             <a href="/Feyijimi Erinle CV.PDF" download className="resume-link">
               My Resume <AiOutlineCloudDownload className="resume-icon" />
             </a>
           </div>
 
-          <div className="lottie__container" ref={container}></div>
+          <div className="personality-adverbs">
+            <p>
+              <span>“</span> LIN<span>G</span>UIST<span>,</span>
+            </p>
+            <br />
+            <p>
+              <span>M</span>USIC LOVE <span>R,</span>
+            </p>
+            <br />
+            <p>
+              LIFESTYLE <span>.”</span>
+            </p>
+          </div>
         </div>
 
         <div className="banner__info-bottom">

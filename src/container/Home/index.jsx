@@ -10,8 +10,11 @@ import Projects from "../../components/Projects/Projects";
 import Contact from "../../components/Contact/Contact";
 import Social from "../../components/Social/Social";
 import Footer from "../../components/Footer/Footer";
+import { useInView } from "react-intersection-observer";
 
 const Home = () => {
+  const { ref: sectionRef, inView: isVisible } = useInView();
+  const { ref: sectionBottomRef, inView: isVisibleBottom } = useInView();
   return (
     <>
       <div className="nav__wrapper">
@@ -25,13 +28,25 @@ const Home = () => {
       </div>
 
       <Banner />
-      <section>
-        <About />
+
+      <About />
+      <div
+        ref={sectionRef}
+        className={`${isVisible ? "change__section--color" : ""}`}
+      >
         <Skills />
         <Projects />
+      </div>
+      <div
+        ref={sectionBottomRef}
+        className={`double__section ${
+          isVisibleBottom ? "change__section--color-2" : ""
+        }`}
+      >
         <Contact />
         <Social />
-      </section>
+      </div>
+
       <Footer />
     </>
   );

@@ -1,7 +1,7 @@
 .project__container {
-  /* margin-top: 210px; */
   gap: 50px;
   text-align: center;
+  padding: 200px 120px;
 }
 
 .heading-project {
@@ -115,6 +115,7 @@
 @media screen and (max-width: 680px) {
   .project__container {
     gap: 0;
+    padding: 80px 20px;
   }
 
   .heading-project {
@@ -174,8 +175,9 @@
 
 @media screen and (max-width: 1000px) and (min-width: 700px) {
   .project__container {
-    margin-top: 100px;
+    /* margin-top: 100px; */
     gap: 0;
+    padding: 80px 40px;
   }
 
   .heading-project {

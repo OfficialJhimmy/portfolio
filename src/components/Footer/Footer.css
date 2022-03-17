@@ -3,9 +3,10 @@ footer {
   justify-content: space-between;
   align-items: center;
   color: #fff;
-  margin-top: 10px;
-  padding: 40px 30px;
-  border-top: 1px solid #343a40;
+  padding: 40px 90px;
+  background: #0f2027;
+  background: -webkit-linear-gradient(to left, #2c5364, #203a43, #0f2027);
+  background: linear-gradient(to left, #2c5364, #203a43, #0f2027);
 }
 
 .footer-children-copyright p,
@@ -28,8 +29,7 @@ footer {
   footer {
     display: flex;
     flex-direction: column-reverse;
-    margin-top: 10px;
-    padding: 10px 15px;
+    padding: 20px 15px;
   }
 
   .footer-children-copyright p,
@@ -50,7 +50,7 @@ footer {
 
 @media screen and (max-width: 1000px) and (min-width: 700px) {
   footer {
-    margin-top: 120px;
-    padding: 10px 25px;
+    /* margin-top: 120px; */
+    padding: 30px 25px;
   }
 }

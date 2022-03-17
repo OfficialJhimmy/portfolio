@@ -1,44 +1,80 @@
 .banner__wrapper {
   background: #10101a;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  padding: 40px 90px;
+  padding: 0 10px;
   height: 100vh;
 }
 
-.banner__description {
-  display: flex;
-  align-items: center;
-}
-
 .banner-info {
-  width: 50%;
-  margin-right: 50px;
+  position: relative;
+  height: 100%;
+  width: 100%;
 }
 
-.banner-info span {
-  display: block;
-  font-size: 16px;
-  color: #fff;
-  /* color: antiquewhite; */
-  margin-bottom: 10px;
+.tech-adverbs,
+.personality-adverbs {
+  /* background-color: bisque; */
+  padding: 20px;
+  border-radius: 8px;
 }
 
-.glitch-text {
-  font-size: 50px;
-  color: #fff;
-  font-weight: 400;
-  letter-spacing: 0.3px;
+.tech-adverbs {
+  position: absolute;
+  right: 0;
+  top: 1%;
 }
 
-.banner__description p {
-  width: 90%;
-  font-size: 16px;
-  color: #fff;
+.personality-adverbs {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 20px 30px;
+}
+
+.middle-description {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  margin: 90px 0;
+  text-align: center;
+}
+
+.middle-description h1 {
+  font-size: 95px;
   font-weight: 300;
-  line-height: 1.7;
-  margin: 14px 0 20px 0;
+}
+
+.tech-adverbs p,
+.personality-adverbs p {
+  display: inline-flex;
+  font-size: 25px;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  letter-spacing: 1.9px;
+  font-family: "Poppins";
+  font-weight: 200;
+  line-height: 1.5;
+}
+
+.first-child-ad {
+  text-align: end;
+}
+
+.last-child-ad {
+  text-align: center;
+}
+
+.tech-adverbs span,
+.personality-adverbs span {
+  font-family: "Major Mono Display", monospace;
+  color: rgb(150, 149, 149);
+  font-size: 30px;
+  margin-bottom: 3px;
+  font-weight: 300;
+  display: inline-flex;
+  align-items: center;
 }
 
 .resume-link {
@@ -49,6 +85,8 @@
   padding: 10px 15px;
   border-radius: 4px;
   transition: ease-in-out 3s;
+  color: white;
+  margin-top: 10px;
 }
 
 .resume-icon {
@@ -70,10 +108,11 @@
 .banner__info-bottom {
   display: flex;
   align-items: center;
-  margin-top: 30px;
+  margin-top: 60px;
   justify-content: space-between;
   position: relative;
   width: 100%;
+  padding: 0 40px;
 }
 
 .banner-socials a {
@@ -96,30 +135,35 @@
 @media screen and (max-width: 680px) {
   .banner__wrapper {
     padding: 0 20px;
-    height: 100%;
+    height: 100vh;
   }
 
-  .banner__description {
-    flex-direction: column-reverse;
+  .tech-adverbs,
+  .personality-adverbs {
+    padding: 5px;
   }
 
-  .banner-info {
-    width: 100%;
-    margin-right: 0;
+  .personality-adverbs {
+    bottom: 10%;
   }
 
-  .banner-info span {
-    font-size: 13px;
+  .middle-description {
+    margin: 0;
   }
 
-  .glitch-text {
-    font-size: 30px;
+  .middle-description h1 {
+    font-size: 50px;
   }
 
-  .banner__description p {
-    width: 100%;
-    font-size: 14px;
-    margin: 14px 0 20px 0;
+  .tech-adverbs p,
+  .personality-adverbs p {
+    font-size: 15px;
+  }
+
+  .tech-adverbs span,
+  .personality-adverbs span {
+    font-size: 16px;
+    margin-bottom: 1px;
   }
 
   .resume-icon {
@@ -134,6 +178,7 @@
 
   .banner__info-bottom {
     margin-top: 40px;
+    padding: 0 7px;
   }
 
   .banner-socials a:not(:last-child) {
@@ -142,26 +187,34 @@
 
   .banner-socials img {
     width: 19px;
-    /* margin-right: 5px; */
   }
 }
 
 @media screen and (max-width: 1000px) and (min-width: 700px) {
   .banner__wrapper {
-    padding: 140px 30px;
-    height: 100%;
+    padding: 0 10px;
   }
 
-  .banner-info span {
-    font-size: 14px;
+  .tech-adverbs,
+  .personality-adverbs {
+    padding: 15px;
   }
 
-  .glitch-text {
-    font-size: 36px;
+  .tech-adverbs {
+    top: 2%;
   }
 
-  .banner__description p {
-    font-size: 14px;
+  .middle-description {
+    margin: 10px 0;
+  }
+
+  .middle-description h1 {
+    font-size: 80px;
+  }
+
+  .banner__info-bottom {
+    margin-top: 60px;
+    padding: 0 20px;
   }
 
   .banner-socials a:not(:last-child) {
@@ -170,6 +223,5 @@
 
   .banner-socials img {
     width: 25px;
-    /* margin-right: 6px; */
   }
 }
