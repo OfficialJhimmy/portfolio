@@ -66,8 +66,8 @@ export const projectData = [
       "Locomotive Scroll",
     ],
     icons: [React, gsap, swiper, reactrouter],
-    live: "https://dashlanguageschool.com",
-    github: "https://https://github.com/OfficialJhimmy/portfolio12",
+    live: "http://portfolio-jhimmy.netlify.app",
+    github: "https://github.com/OfficialJhimmy/portfolio",
     img: Portfolio,
   },
   {
