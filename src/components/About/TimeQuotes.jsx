@@ -9,27 +9,39 @@ function TimeQuotes() {
   const getCurrentTime = `${date.getHours()} : ${date.getMinutes()} : ${date.getSeconds()}`;
 
   const getCurrentDate = date.toDateString();
+  const getHours = new Date().getHours();
 
-  return (
-    <>
-      <div className="time__quotes--container">
-        {getCurrentTime === "6:00:00" || getCurrentTime <= "11:59:59" ? (
+  function displayMe() {
+    if (getHours < 12) {
+      return (
+        <>
           <MorningQuotes
             getCurrentDate={getCurrentDate}
             getCurrentTime={getCurrentTime}
           />
-        ) : getCurrentTime === "12:00:00" || getCurrentTime <= "17:59:59" ? (
+        </>
+      );
+    } else if (getHours < 19) {
+      return (
+        <>
           <NoonQuotes
             getCurrentDate={getCurrentDate}
             getCurrentTime={getCurrentTime}
           />
-        ) : (
-          <NightQuotes
-            getCurrentDate={getCurrentDate}
-            getCurrentTime={getCurrentTime}
-          />
-        )}
-      </div>
+        </>
+      );
+    } else {
+      return (
+        <NightQuotes
+          getCurrentDate={getCurrentDate}
+          getCurrentTime={getCurrentTime}
+        />
+      );
+    }
+  }
+  return (
+    <>
+      <div className="time__quotes--container">{displayMe()}</div>
     </>
   );
 }
