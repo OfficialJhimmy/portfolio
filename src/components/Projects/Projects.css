@@ -1,6 +1,8 @@
 .project__container {
-  gap: 50px;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 200px 120px;
 }
 
@@ -14,10 +16,13 @@
 }
 
 .project__box {
+  border: 1px solid #6c757d;
+  border-radius: 10px;
   display: flex;
-  align-items: center;
-  text-align: left;
-  color: #fff;
+  flex-direction: column;
+  padding: 20px 30px;
+  color: antiquewhite;
+  width: 50vw;
 }
 
 .project__box:not(:last-child) {
@@ -25,42 +30,62 @@
 }
 
 .project__img {
-  flex: 1;
-  margin-right: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project__img img {
+  width: 90%;
 }
 
 .project__description {
-  flex: 1;
-  background: #eeedde;
-  color: #000;
-  padding: 20px 15px;
-  border-radius: 7px;
+  color: antiquewhite;
 }
 
 .project__info h2 {
   margin-bottom: 14px;
   font-weight: 400;
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .project__info p {
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.6;
   font-size: 14px;
   margin-bottom: 13px;
 }
 
-.project__tools span:not(:last-child) {
-  margin-right: 5px;
+.project--languages__wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
-.project__box:first-child {
-  margin-left: 3px;
+.project__icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.project__icon-container img {
+  width: 30px;
+  cursor: pointer;
+}
+
+.project__icon-container img:not(:last-child) {
+  margin-right: 10px;
+}
+.project__tools span:not(:last-child) {
+  margin-right: 7px;
 }
 
 .project__tools span {
   padding: 5px 7px;
-  background: #17a2b8;
+  /* background: #17a2b8; */
+  background: #10505a;
   margin-bottom: 13px;
   border-radius: 5px;
   font-weight: 300;
@@ -95,7 +120,7 @@
   font-size: 14px;
   font-weight: 300;
   transition: ease-in-out 0.5s;
-  color: #000;
+  color: #fff;
 }
 
 .project__links a:hover {
@@ -114,7 +139,6 @@
 
 @media screen and (max-width: 680px) {
   .project__container {
-    gap: 0;
     padding: 80px 20px;
   }
 
@@ -124,10 +148,10 @@
   }
 
   .project__box {
-    display: block;
-    border: 1px solid #343a40;
     padding: 12px 10px;
-    border-radius: 7px;
+    color: antiquewhite;
+    /* width: 50vw; */
+    width: 80vw;
   }
 
   .project__box:not(:last-child) {
@@ -135,48 +159,50 @@
   }
 
   .project__img {
-    margin-right: 0;
-    margin-bottom: 40px;
-    margin: 0 30px 40px 30px;
+    margin-bottom: 20px;
   }
 
-  .project__description {
-    padding: 0;
-    background: none;
-    color: #fff;
+  .project__img img {
+    width: 93%;
   }
 
   .project__info h2 {
-    margin-bottom: 14px;
     font-size: 20px;
   }
 
   .project__info p {
-    font-size: 13px;
+    font-size: 12px;
     margin-bottom: 15px;
   }
 
-  .project__tools {
-    display: flex;
-    flex-wrap: wrap;
+  .project__icon-container img {
+    width: 25px;
+    cursor: pointer;
+  }
+
+  .project__icon-container img:not(:last-child) {
+    margin-right: 7px;
   }
 
   .project__tools span:not(:last-child) {
     margin-right: 7px;
   }
 
+  .project__tools span {
+    padding: 5px;
+    margin-bottom: 7px;
+    font-size: 12px;
+  }
+
   .project__links a,
   .project__links a:visited,
   .project__links a:focus {
-    color: #fff;
     font-size: 13px;
   }
 }
 
-@media screen and (max-width: 1000px) and (min-width: 700px) {
+@media screen and (max-width: 1000px) and (min-width: 681px) {
   .project__container {
-    /* margin-top: 100px; */
-    gap: 0;
     padding: 80px 40px;
   }
 
@@ -185,31 +211,21 @@
     font-size: 28px;
   }
 
-  .project__wrapper {
-    margin: 0 50px;
-  }
-
   .project__box {
-    display: block;
-    border: 1px solid #343a40;
     padding: 18px 20px;
-    border-radius: 7px;
+    width: 65vw;
   }
 
   .project__box:not(:last-child) {
-    margin-bottom: 50px;
+    margin-bottom: 80px;
   }
 
   .project__img {
-    margin-right: 0;
     margin-bottom: 40px;
-    margin: 0 30px 40px 30px;
   }
 
-  .project__description {
-    padding: 0;
-    background: none;
-    color: #fff;
+  .project__img img {
+    width: 80%;
   }
 
   .project__info h2 {
@@ -222,19 +238,33 @@
     margin-bottom: 15px;
   }
 
-  .project__tools {
-    display: flex;
-    flex-wrap: wrap;
+  .project__icon-container img {
+    width: 27px;
+  }
+
+  .project__icon-container img:not(:last-child) {
+    margin-right: 8px;
   }
 
   .project__tools span:not(:last-child) {
-    margin-right: 7px;
+    margin-right: 6px;
+  }
+
+  .project__tools span {
+    margin-bottom: 13px;
+  }
+
+  .project__links {
+    margin-top: 15px;
   }
 
   .project__links a,
   .project__links a:visited,
   .project__links a:focus {
-    color: #fff;
-    font-size: 15px;
+    font-size: 14px;
+  }
+
+  .project__links a:not(:last-child) {
+    margin-right: 10px;
   }
 }

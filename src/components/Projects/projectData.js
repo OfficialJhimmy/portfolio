@@ -3,6 +3,20 @@ import Ovatave from "../../assets/images/ovatave.webp";
 import PSR from "../../assets/images/psr.webp";
 import Manage from "../../assets/images/manage.webp";
 import Portfolio from "../../assets/images/portfolio.webp";
+import html from "../../assets/icons/html5.svg";
+import css from "../../assets/icons/css3.svg";
+import js from "../../assets/icons/javascript.svg";
+import React from "../../assets/icons/react.svg";
+import redux from "../../assets/icons/redux.svg";
+import reactrouter from "../../assets/icons/reactrouter.svg";
+// import framer from "../../assets/icons/framer.svg";
+import styledcomp from "../../assets/icons/styledcomponents.svg";
+import netlify from "../../assets/icons/netlify.svg";
+import swiper from "../../assets/icons/swiper.svg";
+import gsap from "../../assets/icons/greensock.svg";
+import firebase from "../../assets/icons/firebase.svg";
+
+// import intersect from
 
 export const projectData = [
   {
@@ -14,9 +28,10 @@ export const projectData = [
       "Redux",
       "Styled Components",
       "GSAP",
-      "Paystack",
+      "React Router",
       "Netlify",
     ],
+    icons: [React, redux, styledcomp, gsap, reactrouter, netlify],
     live: "https://dashlanguageschool.com",
     github: "https://github.com/OfficialJhimmy/Dash-Language-Place",
     img: DASH,
@@ -25,7 +40,8 @@ export const projectData = [
     title: "Ovatave",
     description:
       "Talent Management & Brand Development for the next generation of Singers, Models, Athletes, and Digital Entrepreneurs.",
-    tools: ["ReactJs", "GSAP", "AOS", "Netlify"],
+    tools: ["ReactJs", "GSAP", "Netlify"],
+    icons: [React, gsap, netlify],
     live: "http://ovatave.netlify.app/",
     github: "https://github.com/OfficialJhimmy/Ovatave",
     img: Ovatave,
@@ -33,7 +49,8 @@ export const projectData = [
   {
     title: "Property Sales Reality",
     description: "A Real-Estate Company Based in Nigeria.",
-    tools: ["ReactJs", "Redux", "Firebase", "AOS", "Netlify"],
+    tools: ["ReactJs", "Redux", "Firebase", "React Router", "Netlify"],
+    icons: [React, redux, firebase, reactrouter, netlify],
     live: "http://propertysalesreality.netlify.app/",
     github: "https://github.com/OfficialJhimmy/Property-Sales-Reality",
     img: PSR,
@@ -44,11 +61,11 @@ export const projectData = [
     tools: [
       "ReactJs",
       "GSAP",
-      "Intersection Observer",
-      "Lottie",
       "Swiper Js",
+      "React Router",
       "Locomotive Scroll",
     ],
+    icons: [React, gsap, swiper, reactrouter],
     live: "https://dashlanguageschool.com",
     github: "https://https://github.com/OfficialJhimmy/portfolio12",
     img: Portfolio,
@@ -57,6 +74,7 @@ export const projectData = [
     title: "Manage",
     description: "A Front-End Mentor Challenge!",
     tools: ["HTML5", "CSS3", "JavaScript", "Netlify"],
+    icons: [html, css, js, netlify],
     live: "http://manage-front.netlify.app/",
     github: "https://github.com/OfficialJhimmy/manage-landing-page",
     img: Manage,

@@ -27,13 +27,13 @@
 }
 
 .heading-about {
-  font-size: 22px;
+  font-size: 20px;
   line-height: 40px;
   margin: 20px 0;
   font-weight: 300;
 }
 
-.about-description span {
+.inner-span__descrption {
   display: inline-flex;
   align-items: center;
   font-family: inherit;
@@ -41,7 +41,7 @@
 
 @media screen and (max-width: 680px) {
   .about-section {
-    padding: 80px 20px 20px 20px;
+    padding: 80px 20px 40px 20px;
   }
   .about-description {
     margin: 50px 0px 30px 0px;

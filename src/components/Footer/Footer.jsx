@@ -20,11 +20,32 @@ function Footer() {
           <p>Sleeping 😴</p>
         </>
       );
-    } else if (getHours < 8) {
+    } else if (getHours < 7) {
       return (
         <>
           <p>{getCurrentTime}:</p>
           <p>Morning Routine 🏋️‍♂️</p>
+        </>
+      );
+    } else if (getHours < 10) {
+      return (
+        <>
+          <p>{getCurrentTime}:</p>
+          <p>Breakfast 🍝</p>
+        </>
+      );
+    } else if (getHours < 12) {
+      return (
+        <>
+          <p>{getCurrentTime}:</p>
+          <p>Time to Code 👨‍💻</p>
+        </>
+      );
+    } else if (getHours < 14) {
+      return (
+        <>
+          <p>{getCurrentTime}:</p>
+          <p>Lunch Time 🍜</p>
         </>
       );
     } else if (getHours < 16) {

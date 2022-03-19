@@ -34,11 +34,19 @@ function Projects() {
                 <h2>{pro.title}</h2>
                 <p>{pro.description}</p>
               </div>
-              <div className="project__tools">
-                {pro.tools.map((tool, index) => (
-                  <span key={index}>{tool}</span>
-                ))}
+              <div className="project--languages__wrapper">
+                <div className="project__icon-container">
+                  {pro.icons.map((src, index) => (
+                    <img src={src} alt="Tools Icons" key={index} />
+                  ))}
+                </div>
+                <div className="project__tools">
+                  {pro.tools.map((tool, index) => (
+                    <span key={index}>{tool}</span>
+                  ))}
+                </div>
               </div>
+
               <div className="project__links">
                 <a href={pro.live} target="_blank" rel="noreferrer">
                   <BsLink45Deg className="project-icon" /> Live
