@@ -1,0 +1,30 @@
+.change__section--color {
+  background: #0f2027;
+  background: -webkit-linear-gradient(to right, #2c5364, #203a43, #0f2027);
+  background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+}
+
+.double__section {
+  padding: 200px 120px;
+}
+
+.change__section--color-2 {
+  background: #348f50;
+  background: -webkit-linear-gradient(to bottom left, #56b4d3, #348f50);
+  background: linear-gradient(to bottom left, #56b4d3, #348f50);
+}
+@media screen and (max-width: 680px) {
+  .nav__wrapper h3 {
+    top: 33px;
+  }
+
+  .double__section {
+    padding: 120px 20px;
+  }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 690px) {
+  .double__section {
+    padding: 80px 40px;
+  }
+}

@@ -14,7 +14,7 @@
   border-bottom: 1px solid rgb(116, 116, 116);
 }
 
-/* Chnage Background Colours */
+/* Change Background Colours */
 .change__section--color {
   background: #0f2027;
   background: -webkit-linear-gradient(to right, #2c5364, #203a43, #0f2027);
@@ -38,9 +38,6 @@
   .double__section {
     padding: 120px 20px;
   }
-}
-
-@media screen and (max-width: 400px) and (min-width: 280px) {
 }
 
 @media screen and (max-width: 1000px) and (min-width: 690px) {

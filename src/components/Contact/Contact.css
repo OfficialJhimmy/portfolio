@@ -2,8 +2,6 @@
   position: relative;
   color: antiquewhite;
   margin-bottom: 50px;
-  /* margin-top: 210px; */
-  /* padding: 200px 120px; */
 }
 
 .contact__wrapper h2 {
@@ -29,6 +27,7 @@
   color: antiquewhite;
   align-items: center;
   transition: ease-in-out 2s;
+  text-decoration: underline;
 }
 
 .contact__link:hover {
@@ -45,11 +44,6 @@
 }
 
 @media screen and (max-width: 680px) {
-  .contact__wrapper {
-    /* margin-top: 100px; */
-    /* padding: 80px 20px; */
-  }
-
   .contact__wrapper h2 {
     margin-bottom: 30px;
     font-size: 25px;
@@ -70,11 +64,5 @@
     position: absolute;
     bottom: 3%;
     right: 2%;
-  }
-}
-
-@media screen and (max-width: 1000px) and (min-width: 700px) {
-  .contact__wrapper {
-    /* padding: 80px 40px; */
   }
 }

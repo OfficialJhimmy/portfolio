@@ -69,10 +69,7 @@ function About() {
             <span className="inner-span__descrption">
               Spanish <img src={ESP} alt="Flag of Spain" />
             </span>
-            and{" "}
-            <span className="inner-span__descrption">
-              Yoruba(mother tongue) <img src={NGA} alt="Flag of Nigeria" />
-            </span>
+            and Yoruba (mother tongue)
             <br />
             💡 On days when I'm not at my workstation, you'll find me making
             documentaries on Lifestyle escapades.

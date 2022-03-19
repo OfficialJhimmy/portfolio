@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
 
 @import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap");
+
 /* FONTS */
 @font-face {
   font-family: "gingerregular";
@@ -10,8 +11,6 @@
   font-style: normal;
   font-display: swap;
 }
-
-/* font-family: 'Major Mono Display', monospace; */
 
 *,
 *::after,
@@ -39,6 +38,7 @@ html {
   transform-origin: center right;
   transition: transform 0.3s, opacity 0.3s;
   opacity: 0;
+  background-color: #444;
 }
 
 ::-webkit-scrollbar-thumb {
