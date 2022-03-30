@@ -2,21 +2,18 @@ import DASH from "../../assets/images/dash.webp";
 import Ovatave from "../../assets/images/ovatave.webp";
 import PSR from "../../assets/images/psr.webp";
 import Manage from "../../assets/images/manage.webp";
-import Portfolio from "../../assets/images/portfolio.webp";
+import Portfolio from "../../assets/images/banner-port.webp";
 import html from "../../assets/icons/html5.svg";
 import css from "../../assets/icons/css3.svg";
 import js from "../../assets/icons/javascript.svg";
 import React from "../../assets/icons/react.svg";
 import redux from "../../assets/icons/redux.svg";
 import reactrouter from "../../assets/icons/reactrouter.svg";
-// import framer from "../../assets/icons/framer.svg";
 import styledcomp from "../../assets/icons/styledcomponents.svg";
 import netlify from "../../assets/icons/netlify.svg";
 import swiper from "../../assets/icons/swiper.svg";
 import gsap from "../../assets/icons/greensock.svg";
 import firebase from "../../assets/icons/firebase.svg";
-
-// import intersect from
 
 export const projectData = [
   {
