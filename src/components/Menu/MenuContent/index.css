@@ -9,9 +9,11 @@
   color: white;
   z-index: 10;
 }
+
 .menu-inside.open {
   transform: translateX(0);
 }
+
 .menu-inside.open .internal-nav-links li:nth-child(1n) a {
   transition-delay: 0.9s;
 }
@@ -37,15 +39,19 @@
 .menu-inside.open .external-nav-links li:nth-child(2n) a {
   transition-delay: 1.1s;
 }
+
 .menu-inside.open .external-nav-links li:nth-child(3n) a {
   transition-delay: 1.2s;
 }
+
 .menu-inside.open .external-nav-links li:nth-child(4n) a {
   transition-delay: 1.3s;
 }
+
 .menu-inside.open .external-nav-links li:nth-child(5n) a {
   transition-delay: 1.4s;
 }
+
 .menu-inside.open .external-nav-links li a {
   opacity: 1;
   transform: translate(0);
@@ -54,16 +60,16 @@
 }
 
 .menu-nav-container {
-  position: relative;
-  left: 220px;
-  top: 100px;
-  overflow: hidden;
-  width: calc(90vw - 260px);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .menu-nav-container .internal-nav-links li {
   margin-bottom: 20px;
 }
+
 .menu-nav-container .internal-nav-links a {
   font-size: clamp(32px, 4vw, 52px);
   line-height: 1.1em;
@@ -77,6 +83,7 @@
 .menu-nav-container .internal-nav-links a:hover {
   cursor: pointer;
 }
+
 .menu-nav-container .internal-nav-links a:hover a {
   font-weight: 800;
 }
@@ -86,9 +93,11 @@
   display: flex;
   flex-wrap: wrap;
 }
+
 .menu-nav-container .external-nav-links li {
   margin-right: 30px;
 }
+
 .menu-nav-container .external-nav-links li a {
   transform: translate(-100%);
   opacity: 0;
@@ -96,23 +105,13 @@
   transition: all 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19);
   color: antiquewhite;
 }
+
 .menu-nav-container .external-nav-links li:last-of-type {
   margin-right: 0px;
 }
 
 @media screen and (max-width: 768px) {
-  .menu-inside .menu-nav-container {
-    left: 10%;
-    width: 100vw;
+  .menu-nav-container .external-nav-links li {
+    margin-right: 15px;
   }
 }
-
-/* @media screen and (max-width: 1000px) and (min-width: 700px) {
-  .menu-inside .menu-nav-container {
-    left: 10%;
-    width: 100vw;
-  }
-  .menu-inside .menu-nav-container img {
-    display: none !important;
-  }
-} */

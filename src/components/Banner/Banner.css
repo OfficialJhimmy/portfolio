@@ -12,7 +12,6 @@
 
 .tech-adverbs,
 .personality-adverbs {
-  /* background-color: bisque; */
   padding: 20px;
   border-radius: 8px;
 }
@@ -85,7 +84,7 @@
   padding: 10px 15px;
   border-radius: 5px;
   transition: ease-in-out 0.9s;
-  color: antiquewhite;
+  color: #fff;
   font-size: 15px;
   font-weight: 300;
   margin-top: 10px;
@@ -99,8 +98,6 @@
 
 .resume-link:hover {
   transform: scale(0.9);
-  /* background-color: antiquewhite;
-  color: #333; */
 }
 
 .lottie__container {

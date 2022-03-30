@@ -1,7 +1,5 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import "./Banner.css";
-import Lottie from "lottie-web";
-import celebration from "../../assets/lottie/celebration.json";
 import MusicBnxn from "../Music/MusicBnxn";
 import { AiOutlineCloudDownload } from "react-icons/ai";
 import Twitter from "../../assets/icons/twitter.png";
@@ -11,17 +9,17 @@ import Instagram from "../../assets/icons/instagram.png";
 import gmail from "../../assets/icons/gmail.png";
 
 const Banner = () => {
-  const container = useRef(null);
+  // const container = useRef(null);
 
-  useEffect(() => {
-    Lottie.loadAnimation({
-      container: container.current,
-      renderer: "svg",
-      loop: true,
-      autoplay: true,
-      animationData: celebration,
-    });
-  }, []);
+  // useEffect(() => {
+  //   Lottie.loadAnimation({
+  //     container: container.current,
+  //     renderer: "svg",
+  //     loop: true,
+  //     autoplay: true,
+  //     animationData: celebration,
+  //   });
+  // }, []);
   return (
     <>
       <div className="banner__wrapper">
