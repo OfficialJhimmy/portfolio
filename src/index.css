@@ -134,6 +134,7 @@ button {
   z-index: 1200;
   background-color: #10101a;
 }
+
 .progress {
   margin: 0;
   padding: 0;
@@ -146,6 +147,7 @@ button {
   width: 100%;
   flex-direction: column;
 }
+
 #percent {
   margin: 0;
   padding: 0;
@@ -157,12 +159,14 @@ button {
   font-size: 100px;
   font-family: "gingerregular";
 }
+
 #bar {
   margin: 0;
   padding: 0;
   width: 80%;
   margin-top: 20px;
 }
+
 #barc {
   margin: 0;
   padding: 0;
